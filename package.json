@@ -1,0 +1,14 @@
+{
+  "name": "hw3pack",
+  "version": "1.0.0",
+  "description": "hw3 package",
+  "main": "nodehw3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jabriel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
