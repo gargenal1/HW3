@@ -54,6 +54,6 @@ app.listen(process.env.PORT || 8080, function (err) {
     if (err) {
         console.log(err);
     } else {
-        console.log("Listening on port on" + process.env.PORT);
+        console.log("Listening on port on " + process.env.PORT);
     }
 });

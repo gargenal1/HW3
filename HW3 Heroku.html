@@ -17,7 +17,7 @@
             $.get("/json", function (data) {
                 console.log(data);
                 $("#1").show();
-                $("#json").text(data);
+                $("#json").text(JSON.stringify(data));
             });
         });
     </script>
