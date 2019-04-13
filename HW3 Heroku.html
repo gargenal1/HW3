@@ -2,18 +2,25 @@
 
 <head>
     <title>HW3</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
-<script>
-    var div1 = document.getElementById("1");
-document.on('click', function () {
-});
-</script>
+
 <body>
     <h1>HW3 for Julio Gabriel Argenal</h1>
-    <div id="1"></div>
-    <button type="button">Click Me for Info!</button>
+    <div id="1">
+        <h3><strong>Stringified JSON:</strong> <span id="json"></span></h3>
+    </div>
+    <button id="showJSON" type="button">Click Me for Info!</button>
 
-    <script src="nodehw3.js"></script>
+    <script type="text/javascript">
+        $("#showJSON").on("click", function () {
+            $.get("/json", function (data) {
+                console.log(data);
+                $("#1").show();
+                $("#json").text(JSON.stringify(data));
+            });
+        });
+    </script>
 </body>
 
 </html>

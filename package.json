@@ -4,6 +4,7 @@
   "description": "hw3 package",
   "main": "nodehw3.js",
   "scripts": {
+    "start": "node nodehw3.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jabriel",
